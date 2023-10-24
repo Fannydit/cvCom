@@ -310,6 +310,28 @@ window.addEventListener("scroll", animateElementsOnScroll);
 animateElementsOnScroll();
 
 
+/*********************Portfolio**********************/
 
 
+function showImage(imageSrc, title, description) {
+    const modal = document.createElement("div");
+    modal.className = "modal";
+    modal.innerHTML = `
+        <div class="modal-content">
+            <span class="close" onclick="closeImage()">&times;</span>
+            <img src="${imageSrc}" alt="${title}">
+            <h2>${title}</h2>
+            <p>${description}</p>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    document.body.style.overflow = "hidden"; // Pour désactiver le défilement de la page
+}
 
+function closeImage() {
+    const modal = document.querySelector(".modal");
+    if (modal) {
+        modal.remove();
+        document.body.style.overflow = "auto"; // Réactiver le défilement de la page
+    }
+}
