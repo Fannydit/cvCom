@@ -86,7 +86,9 @@ h2 {
     color: #61a274;
 }
 
-
+h4 {
+    color: #61a274;
+}
 
 /* COMPETENCE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -486,6 +488,7 @@ time {
     position: relative;
 }
 
+
 .close {
     position: absolute;
     top: 10px;
@@ -495,11 +498,17 @@ time {
 }
 
 /* Ajoutez ce style pour l'image modale */
+/* .modal img {
+    width: 50%;
+    max-width: 100%;
+} */
+
 .modal img {
+    display: block; /* Centre l'image horizontalement */
+    margin: 0 auto; /* Centre l'image verticalement */
     width: 50%;
     max-width: 100%;
 }
-
 
 /* FOOTER 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
