@@ -6,9 +6,9 @@
     color: white;
 }
 
-.imgHaut {
+/* .imgHaut {
     width: 100%;
-}
+} */
 
 
 
@@ -28,14 +28,11 @@ body {
     overflow-x: hidden;
 }
 
-/* header {
-    background-image: url('../../assets/img/Sanstitre.png');
-    background-size: cover;
-    background-size: 100% ;
-    background-position: center top;
-    background-repeat: no-repeat;
-    height: 100%;
-} */
+
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 header {
     background-image: url('../../assets/img/Sanstitre2.png');
     background-size: 100% 100%;
@@ -46,39 +43,26 @@ header {
 }
 
 
-/* .aPropos {
-    width: 90%;
-    max-width: 1200px;
-    text-align: justify;
-    padding-bottom: 30px;
-    color: #7cba8b;
-    margin-top: 180px;
-    background-attachment: fixed; /* Fixer la section aPropos 
-    background-color: #43434372;
-} */
-
 .aPropos {
     width: 90%;
     max-width: 1200px;
     text-align: justify;
     padding-bottom: 30px;
     color: #7cba8b;
-    margin-top: 5%; /* Utilisez des pourcentages pour le décalage par rapport au haut */
+    margin-top: 5%;
     background-attachment: fixed;
-    background-color: rgba(67, 67, 67, 0.7); /* Utilisez rgba pour la transparence de la couleur de fond */
+    background-color: rgba(67, 67, 67, 0.7);
     margin-top: 12%;
 }
 
 .photoProfil {
-    margin-top: 2%; /* Utilisez des pourcentages pour le décalage par rapport au haut */
-    margin-left: 10%; /* Utilisez des pourcentages pour le décalage par rapport à gauche */
-}
-.photoProfil {
     width: 55%;
     border-radius: 50%;
     border: 3px solid #7cba8b;
+    margin-top: 2%; 
+    margin-left: 10%;
 }
-/* Utiliser des media queries pour ajuster la taille du texte en fonction de la taille de l'écran */
+
 @media (max-width: 760px) {
     .aPropos h1 {
         font-size: 24px;
@@ -94,30 +78,6 @@ header {
         width : 30%;
     }
 }
-
-
-
-/* .photoProfil {
-    margin-top: 10px;
-    margin-left: 120px;
-    background-attachment: fixed; 
-} */
-
-
-
-
-
-/* INTRO SECTION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* .aPropos {
-    width: 90%;
-    max-width: 1200px;
-    text-align: justify;
-    padding-bottom: 30px;
-    color: #7cba8b;
-} */
-
 
 .btn {
     display: inline-block;
