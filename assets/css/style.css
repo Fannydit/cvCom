@@ -26,7 +26,59 @@ body {
 /* INTRO SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+
+
 header {
+    background-image: url('../../assets/img/Sanstitre2.png');
+    background-size: cover; /* Utilisez 'cover' au lieu de '100% 100%' pour l'image de fond */
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.aPropos {
+    width: 90%;
+    max-width: 1200px;
+    text-align: justify;
+    padding-bottom: 30px;
+    color: #7cba8b;
+    margin-top: 5%;
+    background-attachment: fixed;
+    background-color: rgba(67, 67, 67, 0.7);
+    margin-top: 12%;
+}
+
+.photoProfil {
+    width: 55%;
+    border-radius: 50%;
+    border: 3px solid #7cba8b;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+@media (max-width: 760px) {
+    .aPropos h1 {
+        font-size: 24px;
+    }
+
+    .aPropos h3 {
+        font-size: 18px;
+    }
+
+    .photoProfil {
+        margin-top: 10px;
+        margin-left: 0;
+        width: 30%;
+    }
+
+    /* Pour les écrans plus petits, réduisez la taille de l'image de fond */
+    header {
+        background-size: cover;
+    }
+}
+
+/* header {
     background-image: url('../../assets/img/Sanstitre2.png');
     background-size: 100% 100%;
     background-position: center top;
@@ -54,9 +106,9 @@ header {
     border: 3px solid #7cba8b;
     margin-top: 2%; 
     margin-left: 10%;
-}
+} */
 
-@media (max-width: 760px) {
+/* @media (max-width: 760px) {
     .aPropos h1 {
         font-size: 24px;
     }
@@ -70,7 +122,7 @@ header {
         margin-left: 0;
         width : 30%;
     }
-}
+} */
 
 .btn {
     display: inline-block;
