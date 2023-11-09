@@ -313,25 +313,40 @@ animateElementsOnScroll();
 /*********************Portfolio**********************/
 
 
-function showImage(imageSrc, title, description) {
-    const modal = document.createElement("div");
-    modal.className = "modal";
-    modal.innerHTML = `
-        <div class="modal-content">
-            <span class="close" onclick="closeImage()">&times;</span>
-            <img src="${imageSrc}" alt="${title}">
-            <h2>${title}</h2>
-            <p>${description}</p>
-        </div>
-    `;
-    document.body.appendChild(modal);
-    document.body.style.overflow = "hidden"; // Pour désactiver le défilement de la page
+// function showImage(imageSrc, title, description) {
+//     const modal = document.createElement("div");
+//     modal.className = "modal";
+//     modal.innerHTML = `
+//         <div class="modal-content">
+//             <span class="close" onclick="closeImage()">&times;</span>
+//             <img src="${imageSrc}" alt="${title}">
+//             <h2>${title}</h2>
+//             <p>${description}</p>
+//         </div>
+//     `;
+//     document.body.appendChild(modal);
+//     document.body.style.overflow = "hidden"; // Pour désactiver le défilement de la page
+// }
+
+// function closeImage() {
+//     const modal = document.querySelector(".modal");
+//     if (modal) {
+//         modal.remove();
+//         document.body.style.overflow = "auto"; // Réactiver le défilement de la page
+//     }
+// }
+
+const projects = document.querySelectorAll('.project');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+function closeLightbox() {
+    lightbox.style.display = 'none';
 }
 
-function closeImage() {
-    const modal = document.querySelector(".modal");
-    if (modal) {
-        modal.remove();
-        document.body.style.overflow = "auto"; // Réactiver le défilement de la page
-    }
-}
+projects.forEach(project => {
+    project.addEventListener('click', () => {
+        lightboxImg.src = project.querySelector('img').src;
+        lightbox.style.display = 'block';
+    });
+});

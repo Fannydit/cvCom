@@ -60,7 +60,8 @@
             <div class="container aPropos">
                 <div class="row">
                     <div class="col-md-4 mt-md-5">
-                        <img class="photoProfil img-fluid" src="./assets/img/fanny-illust.png" alt="photo de profil">
+                        <img class="photoProfil mt-3 ms-5" src="./assets/img/photo.png" alt="photo de profil"
+                            onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
                     </div>
                     <div class="col-md-8 mt-md-5">
                         <h1 class="mt-3">Fanny Daillet</h1>
@@ -316,45 +317,64 @@
     </section>
 
     <!-- Portfolio   -->
-    <section class="portfolio-section" id="portfolio">
+    <section class="portfolio-section pb-5" id="portfolio">
         <div class="container">
             <div class="row d-flex justify-content-start">
                 <h2 class="mt-5 mb-5">Portfolio</h2>
-                <h4 class="mt-2">Création de logos</h4>
+                <h4 class="mt-2 mb-4">Exemples de logos réalisés</h4>
                 <div class="col-md-4 mt-3">
-                    <div class="project">
-                        <img src="./assets/img/logo.png" alt="Projet 1" class="img-fluid"
-                            onclick="showImage('./assets/img/logo.png', 'Projet 1', 'Logo créé pour un site web de recettes végétariennes')">
+                    <div class="project mt-5">
+                        <img src="./assets/img/logo.png" alt="logo 1" class="img-fluid">
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="project">
-                        <img src="./assets/img/nettoyage1.png" alt="Projet 2" class="img-fluid"
-                            onclick="showImage('./assets/img/nettoyage1.png', 'Projet 2', 'Description du projet 2.')">
+                        <img src="./assets/img/logo2.png" alt="logo 2" class="img-fluid">
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="project">
-                        <img src="projet3.jpg" alt="Projet 3" class="img-fluid"
-                            onclick="showImage('projet3.jpg', 'Projet 3', 'Description du projet 3.')">
-                        <h4>Projet 3</h4>
-                        <p>Description du projet 3.</p>
+                        <img src="./assets/img/logo3.png" alt="logo 3" class="img-fluid">
                     </div>
                 </div>
-                <h4 class="mt-5">Création de plaquettes</h4>
+                <h4 class="mt-5 mb-4">Exemples d'affiches réalisées</h4>
                 <div class="col-md-4">
                     <div class="project">
-                        <img src="projet3.jpg" alt="Projet 3" class="img-fluid"
-                            onclick="showImage('projet3.jpg', 'Projet 3', 'Description du projet 3.')">
-                        <h4>Projet 3</h4>
-                        <p>Description du projet 3.</p>
+                        <img src="./assets/img/affiche1.png" alt="Affiche 1" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project">
+                        <img src="./assets/img/affiche2.png" alt="Affiche 2" class="img-fluid">
+                    </div>
+                </div>
+                <h4 class="mt-5 mb-4">Exemples de plaquettes réalisées</h4>
+                <div class="col-md-4">
+                    <div class="project">
+                        <img src="./assets/img/plaquette1.png" alt="Plaquette 1" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project">
+                        <img src="./assets/img/plaquette2.png" alt="Plaquette 2" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project">
+                        <img src="./assets/img/plaquette3.png" alt="Plaquette 3" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    
+    <div id="lightbox">
+        <span id="close-button" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Image agrandie">
+    </div>
 
     <footer class="footer">
         <div class="container">
